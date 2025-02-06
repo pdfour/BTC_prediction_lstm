@@ -49,4 +49,6 @@ Selon moi, en particulier pour le scalping, les modèles basés sur l'apprentiss
 
 ## Projet Bokeh
 
-Le dossier `bokeh` est un projet plus élaboré où est utilisée la librairie Bokeh pour faire de l'affichage en temps réel (actualisation chaque seconde) du BTC, avec une courbe de prédiction. Les données (prix, volume, date) sont récupérées via l'API MEXC, et les prédictions sont faites via TimeGPT de Nixtla.io (extrêmement précis, même pour les prédictions à court terme), dorénavant payant. En plus de l'affichage, des investissements peuvent être faits automatiquement, en utilisant l'API MEXC ou la librairie Selenium qui permet d'exécuter des actions sur un navigateur automatiquement, ou manuellement.
+Le dossier `bokeh` est un projet plus élaboré où est utilisée la librairie Bokeh pour faire de l'affichage en temps réel (actualisation chaque seconde) du BTC, avec une courbe de prédiction. Les données (prix, volume, date) sont récupérées via l'API MEXC, et les prédictions sont faites via TimeGPT de Nixtla.io (extrêmement précis, même pour les prédictions à court terme), dorénavant payant :(. 
+
+En plus de l'affichage, des investissements peuvent être faits automatiquement, en utilisant l'API MEXC ou la librairie Selenium qui permet d'exécuter des actions sur un navigateur automatiquement, ou manuellement.
