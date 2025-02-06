@@ -23,13 +23,15 @@ Le risque avec l'effet de levier est la limite de contre. Si l'on a acheté au p
 - Prix du BTC à l'achat + 0.1% * prix du BTC à l'achat si le trade est un short
 
 
-Le gain est  :  variation en pourcents du BTC * (mise initiale investie*effet de levier) - frais de taker par ordre en pourcents * 2 soit 
+Le gain est  :  
 
- (variation en pourcents du BTC  - frais de taker par ordre en pourcents * 2)  * (mise initiale investie*effet de levier)
+variation en pourcents du BTC * (mise initiale investie*effet de levier) - frais de taker par ordre en pourcents * 2 
+
+soit  ( variation en pourcents du BTC  - frais de taker par ordre en pourcents * 2)  * (mise initiale investie * effet de levier)
 
  soit en réalité : 
 
- ( 0.12 - 0.02) * ( 100 *100) = 100 
+ ( 0.12 - 0.02) * ( 100 * 100) = 100 
 
 Pour une variation de 0.12%, le gain est celui de la somme initiale investie, soit 100 euros.
 
@@ -37,7 +39,7 @@ Ce n'est pas un jeu à somme nulle, car il faut compter les frais de taker, et l
 
 En utilisant un modèle d'IA, on peut prédire la valeur du BTC, et on peut établir une courbe de risque pour le scalping. Le scalping est risqué, et on peut limiter les risques à un certain seuil en modifiant la somme initiale investie, le temps entre l'achat et la vente, et la confiance établie dans la prédiction.
 
-### Modèles d'IA
+
 
 Les modèles comme les LSTM sont obsolètes depuis longtemps et les modèles d'IA basés sur l'architecture Transformers ont montré leur efficacité depuis longtemps. Sur https://paperswithcode.com/task/time-series-forecasting, on peut voir les modèles de Time-series forecasting open-source les plus performants à l'heure actuelle (SOTA).
 
