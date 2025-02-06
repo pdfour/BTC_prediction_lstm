@@ -11,7 +11,7 @@ Prédiction du prix du BTC avec un LSTM
 Mon but premier était de faire du scalping (trading sur les cryptomonnaies à très court terme, de l'ordre de quelques minutes) en utilisant l'effet de levier (contrats à terme - futures).
 
 
-Mettons que le BTC monte de 0.12% en l'espace d'une minute, ce qui est réaliste, et que l'on parie une somme de 100 euros avec un effet de levier de 100. Cela donne une somme totale réelle de 100 * 100 = 10,000 euros. Si le BTC monte de 0.1%, les dividendes reçues sont 0.1% * 10,000 = 100 euros, soit la somme initialement investie. Ainsi, on gagne la somme investie en l'espace de quelques minutes. À cela, il faut soustraire les frais de taker (commission de la plateforme de trading). Chez MEXC.com, ils étaient de 0.01% par ordre. Soit 0.01% * 10,000 = 10 euro, fois deux car il y a deux ordres (achat et vente). Donc, la somme réelle obtenue est 100 - 20 = 80 euros.
+Mettons que le BTC monte de 0.12% en l'espace de quelques minutes, ce qui est réaliste, et que l'on parie une somme de 100 euros avec un effet de levier de 100. Cela donne une somme totale réelle de 100 * 100 = 10,000 euros. Si le BTC monte de 0.1% (0.1% de sa valeur, pas 0.1% de 100), les dividendes reçues sont 0.1% * 10,000 = 100 euros, soit la somme initialement investie. Ainsi, on gagne la somme investie en l'espace de quelques minutes. À cela, il faut soustraire les frais de taker (commission de la plateforme de trading). Chez MEXC.com, ils étaient de 0.01% par ordre. Soit 0.01% * 10,000 = 10 euro, fois deux car il y a deux ordres (achat et vente). Donc, la somme réelle obtenue est 100 - 20 = 80 euros.
 
 
 On peut faire un long (achat au plus bas puis revente au plus haut) ou un short (vente au plus haut puis achat au plus bas), ce qui signifie que l'on peut faire du profit sur la baisse ou l'élévation du BTC.
@@ -25,13 +25,13 @@ Le risque avec l'effet de levier est la limite de contre. Si l'on a acheté au p
 
 Le gain est  :  
 
-variation en pourcents du BTC * (mise initiale investie*effet de levier) - frais de taker par ordre en pourcents * 2 
+variation en pourcents du BTC * (mise initiale investie * effet de levier) - frais de taker par ordre en pourcents * 2 
 
-soit  ( variation en pourcents du BTC  - frais de taker par ordre en pourcents * 2)  * (mise initiale investie * effet de levier)
+soit  (variation en pourcents du BTC  - frais de taker par ordre en pourcents * 2)  * (mise initiale investie * effet de levier)
 
  soit en réalité : 
 
- ( 0.12 - 0.02) * ( 100 * 100) = 100 
+ (0.12 - 0.02) * ( 100 * 100) = 100 
 
 Pour une variation de 0.12%, le gain est celui de la somme initiale investie, soit 100 euros.
 
